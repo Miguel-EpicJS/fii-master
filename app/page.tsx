@@ -26,7 +26,7 @@ export default function Home() {
           __html: `
             import Chatbox from 'https://cdn.jsdelivr.net/npm/@chatvolt/embeds@latest/dist/chatbox/index.js';
             const widget = await Chatbox.initBubble({
-              agentId: 'cm6y269wr017mwy0epgw5clo0',
+              agentId: '${process.env.ID}',
             });
           `,
         }}
